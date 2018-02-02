@@ -5,6 +5,25 @@
   <title>Document</title>
 </head>
 <body>
-  <a href="{{url}}/{{id+1}}">Link to here +1 : {{id+1}}</a>
+  <a href="{{url}}/{{id+1}}">[{{tag}}] Link to here +1 : {{id+1}}</a>
+  <table>
+    <thead>
+      <tr>
+        <td>First</td>
+        <td>Second</td>
+      </tr>
+    </thead>
+    <tr>
+      <td>{{first}}</td>
+      <td>{{second}}</td>
+    </tr>
+  </table>
+  <form action="./" method="post">
+    <label for="first">First :</label>
+    <input name="first" type="text">
+    <label for="second">Second :</label>
+    <input name="second" type="text">
+    <input type="submit">
+  </form>
 </body>
 </html>
