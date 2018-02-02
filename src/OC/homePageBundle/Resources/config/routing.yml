@@ -1,0 +1,3 @@
+o_chome_page_homepage:
+    path:     /
+    defaults: { _controller: OChomePageBundle:Default:index }
