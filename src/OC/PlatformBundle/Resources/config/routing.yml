@@ -7,8 +7,6 @@ oc_platform_view:
     defaults: 
       _controller: OCPlatformBundle:Advert:view
       id: 1
-    requirements:
-      id: \d{1}
       
 oc_platform_view_slug:
     path:      /{year}/{slug}.{_format}
