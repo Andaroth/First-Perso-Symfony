@@ -19,4 +19,18 @@ class AdvertController extends Controller
                   ));
         return new Response($content);
     }
+  
+  public function viewAction($id) {
+    $url = $this
+      ->get('router')
+      ->generate(
+        'oc_platform_view', // 1er argument : le nom de la route
+        array('id' => $id)    // 2e argument : les valeurs des paramètres
+      );
+    return new Response("L'URL de l'ID ".$id." est ".$url);
+  }
+  
+  /*public function viewSlugAction($year,$slug,$format) {
+        return new Response("L'année choisie est ".$year." ");
+  }*/
 }
