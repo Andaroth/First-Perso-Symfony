@@ -1,3 +1,11 @@
-o_chome_page_homepage:
-    path:     /
-    defaults: { _controller: OChomePageBundle:Default:index }
+# OC homepagebundle res conf routing
+
+oc_home_page_homepage:
+    path: /
+    defaults: 
+      _controller: OChomePageBundle:Default:index
+
+oc_home_page_otherpage:
+    path: /{page}
+    defaults: 
+      _controller: OChomePageBundle:Default:other
