@@ -1,0 +1,25 @@
+/* Reusable */
+.justify { text-align: justify; }
+.h-200 { height: 200px !important; }
+.h-300 { height: 300px !important; }
+.p-25 { padding: 25px; }
+.pt-25 { padding-top: 25px; }
+.pb-25 { padding-bottom: 25px; }
+.mt-25 { margin-top: 25px; }
+.mb-25 { margin-bottom: 25px; }
+.mb-0 { margin-bottom: 0; }
+.mw-270 { width: 270px !important; }
+.minh-33vh { display: block; height: 33vh !important; }
+/* Multiple */
+.textarea1 { min-height: 100px !important; }
+input[type=text], textarea { background-color: #fff !important; }
+/* Forcing */
+body { margin-top: 64px; }
+nav { position: fixed !important; top: 0; z-index: 255; }
+nav ul a:hover { background-color: rgba(255,255,255,.5); }
+.homepcard { height: 300px; overflow: hidden; }
+.toast { border: 2px solid white; }
+.hidden { display: none !important; }
+@media screen and (max-width: 600px) {
+  .nomobile { display: none !important; }
+}

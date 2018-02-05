@@ -9,3 +9,17 @@ oc_home_page_otherpage:
     path: /{page}
     defaults: 
       _controller: OChomePageBundle:Default:other
+      
+#oc_home_page_file:
+#    path: /{folder}/{file}
+#    defaults: 
+#      _controller: OChomePageBundle:Default:file
+#    requirements:
+#      file: js|css|png|jpg|svg|woff2
+#
+#oc_home_page_filepage:
+#    path: /img/icons/{file}
+#    defaults: 
+#      _controller: OChomePageBundle:Default:ico
+#    requirements:
+#      file: svg

@@ -1,0 +1,26 @@
+.media {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel img {
+  height: 300px;
+  width: 400px;
+}
+
+.images, .videos, .musics {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.videos iframe, .musics iframe {
+  margin: 0 20px auto;
+}
+
+.media h2 {
+  color: white;
+}

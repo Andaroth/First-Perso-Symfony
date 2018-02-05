@@ -1,0 +1,16 @@
+$(document).ready(function(){
+<<<<<<< HEAD
+  $('#carousel').carousel();
+});
+
+
+// Media Pop-Up Image
+	  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+=======
+  $('.carousel').carousel();
+  $('.parallax').parallax();
+  $('.scrollspy').scrollSpy();
+});
+>>>>>>> 2a928d894484c260d553b214c56068e5004c535d
