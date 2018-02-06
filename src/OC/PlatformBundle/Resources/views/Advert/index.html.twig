@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Platform Advert Index</title>
-</head>
-<body>
-  <h1>Chez {{author}}</h1>
-  <p>{{hello}}</p>
-  <p>My mail is {{mymail}} and my website is <a href="{{domain}}">{{domain}}</a>.</p>
-</body>
-</html>
+{% extends "OCPlatformBundle:Advert:layout.html.twig" %}
+
+{% block title %}{{ parent() }} - Index{% endblock %}
+
+{% block body %}
+<section>
+    <h2>Chez {{author}} !</h2>
+    <p>{{hello}} My mail is {{mymail}} and my website is <a href="{{domain}}">{{domain}}</a>. :)</p>
+  </section>
+{% endblock %}

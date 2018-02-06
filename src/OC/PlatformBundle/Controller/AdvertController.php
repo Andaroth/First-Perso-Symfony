@@ -43,9 +43,7 @@ class AdvertController extends Controller
       array(
         'id' => $id,
         'url' => $url,
-        'tag' => $tag,
-        'first' => null,
-        'second' => null
+        'tag' => $tag
       ));
     } // else end
     return new Response($content);
