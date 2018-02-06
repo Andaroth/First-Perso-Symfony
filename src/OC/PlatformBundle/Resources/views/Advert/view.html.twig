@@ -5,6 +5,7 @@
   <title>Platform Advert View</title>
 </head>
 <body>
+  <h1>Chez {{author}}</h1>
   <a href="{{url}}/{{id+1}}">[{{tag}}] Link to here +1 : {{id+1}}</a>
   <table>
     <thead>
@@ -13,10 +14,12 @@
         <td>Second</td>
       </tr>
     </thead>
-    <tr>
-      <td>{{first}}</td>
-      <td>{{second}}</td>
-    </tr>
+    <tbody>
+      <tr>
+        <td>{{first}}</td>
+        <td>{{second}}</td>
+      </tr>
+    </tbody>
   </table>
   <form action="./" method="post">
     <label for="first">First :</label>

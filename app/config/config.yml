@@ -37,6 +37,10 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    globals: 
+      author: "%site_author%"
+      mymail: "%author_mail%"
+      domain: "%author_domain%"
 
 # Doctrine Configuration
 doctrine:

@@ -11,16 +11,6 @@ oc_platform_view:
     defaults: 
       _controller: OCPlatformBundle:Advert:view
       id: \d+
-      
-#oc_platform_view_slug:
-#    path:      /{year}/{slug}.{_format}
-#    defaults: 
-#      _controller: OCPlatformBundle:Advert:viewSlug
-#      year: 1970
-#      format: html
-#    requirements:
-#      year: \d{4}
-#      format: html|xml
 
 oc_platform_add:
     path:      /add
@@ -36,5 +26,15 @@ oc_platform_edit:
 oc_platform_delete:
     path:      /delete/{id}
     defaults: 
-      _controller: OCPlatformBundle:Advert:edit
+      _controller: OCPlatformBundle:Advert:delete
       id: \d+
+
+#oc_platform_view_slug:
+#    path:      /{year}/{slug}.{_format}
+#    defaults: 
+#      _controller: OCPlatformBundle:Advert:viewSlug
+#      year: 1970
+#      format: html
+#    requirements:
+#      year: \d{4}
+#      format: html|xml
