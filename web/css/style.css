@@ -2,7 +2,8 @@
 .justify { text-align: justify; }
 .h-200 { height: 200px !important; }
 .h-300 { height: 300px !important; }
-.p-25 { padding: 25px; }
+.p-0 { padding: 0px; }
+.p-25 { padding: 25px !important; }
 .pt-25 { padding-top: 25px; }
 .pb-25 { padding-bottom: 25px; }
 .mt-25 { margin-top: 25px; }
@@ -14,6 +15,13 @@
 .textarea1 { min-height: 100px !important; }
 input[type=text], textarea { background-color: #fff !important; }
 /* Forcing */
+a:hover { cursor: pointer !important; }
+.modal { overflow-x: hidden; }
+.media { margin: 0 auto; }
+.carousel { width: 100%; }
+.carousel img { height: 300px; width: 400px; }
+.media img, .media .videos, .media .musics { text-align: center; margin-bottom: 40px; }
+.videos iframe, .musics iframe { width: 100%; min-height: 300px; }
 body { margin-top: 64px; }
 nav { position: fixed !important; top: 0; z-index: 255; }
 nav ul a:hover { background-color: rgba(255,255,255,.5); }
