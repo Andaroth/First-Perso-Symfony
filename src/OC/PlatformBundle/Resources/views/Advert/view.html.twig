@@ -6,7 +6,14 @@
 </head>
 <body>
   <h1>Chez {{author}}</h1>
+  
+  {% if tag != null %}
   <a href="{{url}}/{{id+1}}">[{{tag}}] Link to here +1 : {{id+1}}</a>
+  {% else %}
+  <a href="{{url}}/{{id+1}}">Link to here +1 : {{id+1}}</a>
+  {% endif %}
+  
+  {% if ( (first != null) and (second != null) ) %}
   <table>
     <thead>
       <tr>
@@ -21,6 +28,7 @@
       </tr>
     </tbody>
   </table>
+  {% else %}
   <form action="./" method="post">
     <label for="first">First :</label>
     <input name="first" type="text">
@@ -28,5 +36,6 @@
     <input name="second" type="text">
     <input type="submit">
   </form>
+  {% endif %}
 </body>
 </html>
