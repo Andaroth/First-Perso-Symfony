@@ -36,7 +36,7 @@ I'm keeping copying html files from a BeCode's group project, which is now in Sy
 
 #### Twig
 
-Using twig in Symfony is awesome. I really like the way it works, it's much easier to make and include little components with parameters this way. I feel like it's the front-end taste's extension I've been looking for for years. 
+Using twig in Symfony is awesome. I really like the way it works, it's much easier to make and include little components with parameters this way. It feels like I always needed it. 
 
 ## About me
 Always learning web developer. You can check [my website](https://axelfiolle.be) for more projects. 
