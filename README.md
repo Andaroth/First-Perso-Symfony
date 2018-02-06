@@ -19,11 +19,6 @@ First I have configured the routers so it can return multiple pages including a 
 Then I've inserted some .php pages from another project (fil rouge at BeCode.org, see *The Front-End*) and then made it fit to the framework. 
 This implied to move assets to /web folder. 
 
-#### The Front-End
-
-I'm keeping copying html files from a BeCode's group project, which is now in Symfony too (So I can say that I can 'project to Symfony' and 'Symfony to project' lol). 
-[The group's repo is here](https://github.com/Andaroth/fil-rouge-Folo-The-Source) if you want to check our group's commits. 
-
 ### OC\PlatformBundle
 
 - `PlatformBundle` is a testing folder. 
@@ -31,6 +26,15 @@ I'm keeping copying html files from a BeCode's group project, which is now in Sy
 I'm following [OpenClassroom's Symfony course](https://openclassrooms.com/courses/developpez-votre-site-web-avec-le-framework-symfony/), feeling free to take some liberties. 
 
 Work in progress is in this folder. 
+
+### The Front-End
+
+I'm keeping copying html files from a BeCode's group project, which is now in Symfony too (So I can say that I can 'project to Symfony' and 'Symfony to project' lol). 
+[The group's repo is here](https://github.com/Andaroth/fil-rouge-Folo-The-Source) if you want to check our group's commits. 
+
+#### Twig
+
+Using twig in Symfony is awesome. I really like the way it works, it's much easier to make and include little components with parameters this way. I feel like I like it, it's like an ideal front-end taste's extension I'd be looking for for years. 
 
 ## About me
 Always learning web developer. You can check [my website](https://axelfiolle.be) for more projects. 
