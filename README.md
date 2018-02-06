@@ -14,14 +14,15 @@ Note that I'm locally using a vhost (axel.dev) to access /web folder but it does
 
 - The `homePageBundle` is where I apply what I learnt in OpenClassroom (see *OC\PlatformBundle*), mostly without the doc for memory rising purposes. 
 
-First I set up the routers with multiple pages responses including a 404.
+First I have configured the routers so it can return multiple pages including a 404. 
 
 Then I've inserted some .php pages from another project (fil rouge at BeCode.org, see *The Front-End*) and then made it fit to the framework. 
 This implied to move assets to /web folder. 
 
 #### The Front-End
 
-I kept copying html files from the BeCode's group project, which is in Symfony too. [The repo is here](https://github.com/Andaroth/fil-rouge-Folo-The-Source) if you want to check our group's commits. 
+I'm keeping copying html files from a BeCode's group project, which is now in Symfony too (So I can say that I can 'project to Symfony' and 'Symfony to project' lol). 
+[The group's repo is here](https://github.com/Andaroth/fil-rouge-Folo-The-Source) if you want to check our group's commits. 
 
 ### OC\PlatformBundle
 
