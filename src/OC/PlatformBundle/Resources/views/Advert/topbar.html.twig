@@ -1,12 +1,14 @@
 {% block topbar %}
 <nav>
-    <a href="#">{{author}}</a>
-    <ul>
-      <li><a href="#">Lorem</a></li>
-      <li><a href="#">Lorem</a></li>
-      <li><a href="#">Lorem</a></li>
-      <li><a href="#">Lorem</a></li>
-      <li><a href="#">Lorem</a></li>
-    </ul>
-  </nav>
+  <a href="#">{{author}}</a>
+  <ul>
+  {% for i in list %}
+  <a href="#{{i.id}}">
+      <li id="advert-{{i.id}}">
+        {{"["~i.id~"] "~ i.title}}
+      </li>
+    </a>
+  {% endfor %}
+</ul>
+</nav>
 {% endblock %}

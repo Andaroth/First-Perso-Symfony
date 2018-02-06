@@ -7,6 +7,7 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request; // N'oubliez pas ce use !
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class AdvertController extends Controller
 {
@@ -62,12 +63,23 @@ class AdvertController extends Controller
     return $this->render('OCPlatformBundle:Advert:add.html.twig');
   }
   
+  public function menuAction() {
+    $list = array(
+      array('id' => 1, 'title' => 'Recherche développeur Symfony'),
+      array('id' => 2, 'title' => 'Mission de webmaster'),
+      array('id' => 3, 'title' => 'Offre de stage webdesigner') 
+    ); // list end
+    return $this->render('OCPlatformBundle:Advert:topbar.html.twig', array(
+      'list' => $list
+    )); // return array end
+  }
+  
   public function editAction($id, Request $request) {
     // Ici, on récupérera l'annonce correspondante à $id
     // Même mécanisme que pour l'ajout
     if ($request->isMethod('POST')) {
       $request->getSession()->getFlashBag()->add('notice', 'Annonce bien modifiée.');
-      return $this->redirectToRoute('oc_platform_view', array('id' => 5));
+      return $this->redirectToRoute('oc_platform_view', array('id' => $id));
     }
     return $this->render('OCPlatformBundle:Advert:edit.html.twig');
   }

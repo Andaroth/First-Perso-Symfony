@@ -5,7 +5,7 @@
   <title>{% block title %}Platform Advert Layout{% endblock %}</title>
 </head>
 <body>
-{% include 'OCPlatformBundle:Advert:topbar.html.twig' %}
+{{ render(controller("OCPlatformBundle:Advert:menu")) }}
 {% block body %}{% endblock %}
 {% include 'OCPlatformBundle:Advert:footer.html.twig' %}
 </body>

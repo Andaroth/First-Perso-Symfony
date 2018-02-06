@@ -1,10 +1,11 @@
 {% extends "OCPlatformBundle:Advert:layout.html.twig" %}
-
 {% block title %}{{ parent() }} - Add{% endblock %}
-
 {% block body %}
-<section>
-    <h2>Chez {{author}} !</h2>
-    <p>Add page</p>
-  </section>
+<section id="topzone">
+  <h2>Chez {{author}} !</h2>
+  <p>Cette page vous permet d'ajouter des éléments dans Advert</p>
+</section>
+<section class="formzone">
+  {% include 'OCPlatformBundle:Advert:form.html.twig' %}
+</section>
 {% endblock %}
