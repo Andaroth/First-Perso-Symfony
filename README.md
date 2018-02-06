@@ -8,6 +8,8 @@ Goal is to understand how and why using Symfony. It will also improve my MVC min
 
 Note that I'm locally using a vhost (axel.dev) to access /web folder but it doesn't change anything for you. 
 
+Note also that I did NOT use `composer` to install Symfony, I'm using `symphony.phar` manually in terminal because I like danger. 
+
 ## About the content
 
 ### OC\homePageBundle
